@@ -9,6 +9,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["fmartin91@gmail.com"]
 
   spec.summary       = %q{ Rack health check middleware. }
+  spec.description   = %q{ Rack health check middleware. }
   spec.homepage      = "https://github.com/bilby91/rack_health"
   spec.license       = "MIT"
 
@@ -17,7 +18,7 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency 'rack', '>= 1.0.0'
+  spec.add_runtime_dependency 'rack', '~> 1.0', '>= 1.0.0'
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
 end
